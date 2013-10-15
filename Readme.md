@@ -1,6 +1,6 @@
 # PPE Coaching
 
-Sources du PPE BTS SIO SLAM 2013 par Mikael Popowicz, Adam Menebhi, Tony Delgorge et Paul Soubrane
+Sources du PPE BTS SIO SLAM 2013
 
 
 ## What ?
@@ -28,7 +28,11 @@ For more information on SemVer, please visit [http://semver.org/](http://semver.
 
 ## Auteurs
 
+#### Chef de projet
+[Mikael Popowicz](mailto:m.popowicz@iris-bde.fr)
 
+#### Partenaires
+[Adam Menebhi](mailto:a.menebhi@iris-bde.fr)
 
 
 ## Copyright and license
