@@ -15,6 +15,7 @@ $unproduit = new produit(001, 15, 575,50, "Un PC");
 
 //Affichage du résultat de la méthode afficher()
 echo $unproduit->afficher();
+echo "</br>Total du prix: ".$unproduit->total_prix()." €";
 	
 ?>
 </body>

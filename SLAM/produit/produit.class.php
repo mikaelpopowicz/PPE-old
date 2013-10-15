@@ -18,6 +18,10 @@ class produit {
 		$aff .= "Quantité en stock: ".$this->_qte."</br>";
 		return $aff;
 	}
+	public function total_prix() {
+		return $this->_qte*$this->_prix;
+	}
+	
 	public function qte() {
 		return $this->_qte;
 	}
