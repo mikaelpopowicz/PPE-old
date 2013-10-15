@@ -13,7 +13,7 @@ public class produit {
 	
 	public String afficher() {
 		String aff = "";
-		aff += "Référence: "+this.designation+"\n";
+		aff += "Référence: "+this.ref+"\n";
 		aff += "Quantité: "+this.qte+"\n";
 		return aff;
 	}
@@ -28,6 +28,8 @@ public class produit {
 	public static void main(String[] args) {
 		produit test = new produit(1, 15, 575, "Un produit de fou");
 		System.out.println(test.afficher());
+		
+		
 	}
 }
 
