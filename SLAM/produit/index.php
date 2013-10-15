@@ -21,7 +21,18 @@ $unproduit = new produit(array(
 //Affichage du résultat de la méthode afficher()
 echo $unproduit->afficher();
 echo "</br>Total du prix: ".$unproduit->total_prix()." €";
-	
+
+$unproduit->approvisionner(5);
+echo '<br/>';
+echo '<br/>';
+echo $unproduit->afficher();
+echo '<br/>';
+echo '<br/>';
+$unproduit->vendre(18);
+echo $unproduit->afficher();
+echo '<br/>';
+echo '<br/>';
+$unproduit->vendre(18);
 ?>
 </body>
 </html>

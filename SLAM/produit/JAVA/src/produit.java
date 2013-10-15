@@ -1,10 +1,10 @@
 
-public class produit {
+public class Produit {
 	private int ref, qte;
 	private String designation;
 	private float prix;
 
-	public produit(int ref, int qte, float prix, String des) {
+	public Produit(int ref, int qte, float prix, String des) {
 		this.ref = ref;
 		this.qte = qte;
 		this.prix = prix;
@@ -26,7 +26,7 @@ public class produit {
 	
 	
 	public static void main(String[] args) {
-		produit test = new produit(1, 15, 575, "Un produit de fou");
+		Produit test = new Produit(1, 15, 575, "Un produit de fou");
 		System.out.println(test.afficher());
 		
 		

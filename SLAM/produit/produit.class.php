@@ -92,16 +92,25 @@ class produit {
 	}
 	
 	public function approvisionner($qte) {
-		$this->_qte += $qte;
+		if (is_int($qte)) {
+			$this->setQte($this->qte()+$qte);
+		} else {
+			trigger_error('La quantité doit être un entier', E_USER_WARNING);
+			return;
+		}
+		
 	}
 	
 	public function vendre($qte) {
 		if ($qte <= $this->_qte) {
-			$this->_qte -= $qte;
+			$this->setQte($this->qte()-$qte);
 			$message = "<p>La vente a eu lieu</p>";
+			return $message;
 		} else {
-			$message = "<p>La vente n'a pas eu lieu</p>";
+			trigger_error('Vous ne pouvez pas vendre plus que vous n\'avez', E_USER_WARNING);
+			return;
 		}
+		
 	}
 }
 ?>
