@@ -13,7 +13,7 @@ Vous trouverez ici les sources que l'on a utiliser pour travailler ensemble de f
 [Mikael Popowicz](mailto:m.popowicz@iris-bde.fr)  -  [Adam Menebhi](mailto:a.menebhi@iris-bde.fr)
 
 #### Partenaires
-Delgorge Tony  -  Paul Soubrane
+[Tony Delgorge](mailto:cours.tony@gmail.com)  -  [Paul Soubrane](mailto:soubrane.paul@gmail.com)
 
 ## Copyright and license
 
