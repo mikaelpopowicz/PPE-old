@@ -11,7 +11,7 @@
 include 'produit.class.php';
 
 //Créer un objet de la classe
-$unproduit = new produit(001, "Un PC", 575,50, 15);
+$unproduit = new produit(001, 15, 575,50, "Un PC");
 
 //Affichage du résultat de la méthode afficher()
 echo $unproduit->afficher();
