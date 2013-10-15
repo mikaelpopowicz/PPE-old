@@ -14,6 +14,3 @@ Vous trouverez ici les sources que l'on a utiliser pour travailler ensemble de f
 
 #### Partenaires
 [Tony Delgorge](mailto:cours.tony@gmail.com)  -  [Paul Soubrane](mailto:soubrane.paul@gmail.com)
-
-## Copyright and license
-
