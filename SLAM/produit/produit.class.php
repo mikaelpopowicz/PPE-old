@@ -1,6 +1,6 @@
 <?php
 
-class produit() {
+class produit {
 	
 	private $_ref, $_qte, $_prix, $_designation;
 			
