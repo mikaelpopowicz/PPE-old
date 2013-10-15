@@ -22,14 +22,17 @@ class produit {
 		return $this->_qte*$this->_prix;
 	}
 	
-	public function qte() {
-		return $this->_qte;
+	public function approvisionner($qte) {
+		$this->_qte += $qte;
 	}
-	public function prix() {
-		return $this->_prix;
-	}
-	public function designation() {
-		return $this->_designation;
+	
+	public function vendre($qte) {
+		if ($qte <= $this->_qte) {
+			$this->_qte -= $qte;
+			$message = "<p>La vente a eu lieu</p>";
+		} else {
+			$message = "<p>La vente n'a pas eu lieu</p>";
+		}
 	}
 }
 ?>
