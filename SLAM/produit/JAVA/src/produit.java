@@ -25,9 +25,9 @@ public class produit {
 	
 	
 	
-	public static void main() {
-		test = new produit(1, 15, 575, "Un produit de fou");
-		
+	public static void main(String[] args) {
+		produit test = new produit(1, 15, 575, "Un produit de fou");
+		System.out.println(test.afficher());
 	}
 }
 
