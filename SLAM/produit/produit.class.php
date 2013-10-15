@@ -12,8 +12,11 @@ class produit() {
 		$this->_designation = $des;
 	}
 	
-	public function ref() {
-		return $this->_ref;
+	public function afficher() {
+		$aff = "";
+		$aff .= "Référence : ".$this->_ref."</br>";
+		$aff .= "Quantité en stock: ".$this->_qte."</br>";
+		return $aff;
 	}
 	public function qte() {
 		return $this->_qte;
