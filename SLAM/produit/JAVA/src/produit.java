@@ -67,12 +67,43 @@ public class Produit {
 		return total;
 	}
 	
-
+	public void approvisionner(int qte) {
+		this.setQte(this.qte()+qte);
+	}
+	
+	public String vendre(int qte) {
+		if (qte < this.qte()) {
+			this.setQte(this.qte()-qte);
+			return "\nLa vente a eu lieu";
+		}
+		return "\nLa vente n'a pas eu lieu";
+	}
+	
 	public static void main(String[] args) {
+		//Creation d'un objet Produit
 		Produit test = new Produit(1, 15, 575, "Un produit de fou");
+		
+		//Affichage de test
 		System.out.println(test.afficher());
 		
+		//Approvisionner test
+		test.approvisionner(10);
 		
+		//Affichage de test
+		System.out.println(test.afficher());
+		System.out.println(test.total_prix()+" Û");
+		
+		//Vendre test
+		test.vendre(10);
+		
+		//Affichage de test
+		System.out.println(test.afficher());
+		
+		//Vendre test
+		System.out.println(test.vendre(30)+" \n");
+				
+		//Affichage de test
+		System.out.println(test.afficher());
 	}
 }
 
