@@ -38,6 +38,42 @@ class Membre extends \Library\Entity
 		}
 	}
 	
+	public function setPrenom($prenom)
+	{
+		if(empty($prenom) || !is_string($prenom))
+		{
+			$this->erreurs[] = self::PRENOM_INVALIDE;
+		}
+		else
+		{
+			$this->prenom = $prenom;
+		}
+	}
+	
+	public function setAdresse($adresse)
+	{
+		$this->adresse = $adresse;
+	}
+	
+	public function setVille($ville)
+	{
+		$this->ville = $ville;
+	}
+	
+	public function setCp($cp)
+	{
+		if(!empty($cp))
+		{
+			if(!preg_match(self::PREG_CP, $cp))
+			{
+				$this->erreurs[] = self::CP_INVALIDE;
+			}
+			else
+			{
+				$this->cp = $cp;
+			}
+		}
+	}
 	
 	
 	/**
