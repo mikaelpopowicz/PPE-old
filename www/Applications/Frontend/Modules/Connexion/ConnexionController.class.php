@@ -6,7 +6,8 @@ class ConnexionController extends \Library\BackController
 	public function executeIndex(\Library\HTTPRequest $request)
 	{
 		$this->page->addVar('title', 'Connexion');
-     
+		
+		/*
 		if ($request->postExists('login'))
 		{
 			$login = $request->postData('login');
@@ -22,5 +23,6 @@ class ConnexionController extends \Library\BackController
 				$this->app->user()->setFlash('<script>noty({type: "warning", layout: "topCenter", text: "<strong>Attention !</strong> Vous devez sélectionner au moins un salarié pour le supprimer"});</script>');
 			}
 		}
+		*/
 	}
 }

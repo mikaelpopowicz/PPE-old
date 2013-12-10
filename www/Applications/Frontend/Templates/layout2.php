@@ -140,158 +140,161 @@
 			</div>
 		</div>
 	</div>
-	<div id="highlighted">
-		<div class="inner"> 	
-			<div id="content">
-				<div id="content-below" class="wrapper">
-					<div class="container">
-						<div class="row">
-							<div class="upsell"> <small class="muted">99.9% Uptime <span class="spacer">//</span> Free upgrade assistence <span class="spacer">//</span> 24/7 Support <span class="spacer">//</span> Plans from $19.99/month <span class="spacer">//</span> </small> <a href="pricing.htm" class="btn btn-primary">Start your Free Trial Today! <i class="fa fa-arrow-right"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- FOOTER -->
-				<footer id="footer">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-3 col">
-								<div class="block contact-block"> 
-									<!--@todo: replace with company contact details-->
-									<h3>Nous contactez</h3>
-									<address>
-										<p><abbr title="Email"><i class="fa fa-envelope"></i></abbr> <a mailto:"contact@coachme.fr">contact@coachme.fr</a></p>
-									</address>
-								</div>
-							</div>
-							<div class="col-md-5 col">
-								<div class="block">
-									<h3>A propos</h3>
-										<p>Making the web a prettier place one template at a time! We make beautiful, quality, responsive Drupal & web templates!</p>
-								</div>
-							</div>
-							<div class="col-md-4 col">
-								<div class="block newsletter">
-									<h3>Newsletter</h3>
-									<p>Restez informer de toutes les actualités en vous inscrivant à notre Newsletter.</p>
-									<!--@todo: replace with mailchimp code-->
-									<form role="form">
-										<div class="input-group input-group-sm">
-											<label class="sr-only" for="email-field">Email</label>
-											<input type="text" class="form-control" id="email-field" placeholder="Email">
-											<span class="input-group-btn">
-												<button class="btn btn-primary" type="button">Go!</button>
-											</span>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div id="toplink"><a href="#top" class="top-link" title="Back to top">Back To Top <i class="fa fa-chevron-up"></i></a>
-							</div>
-							<!--@todo: replace with company copyright details-->
-							<div class="subfooter">
-								<div class="col-md-6">
-									<p>Copyright 2013 &copy; CoachMe</p>
-								</div>
-								<div class="col-md-6">
-									<ul class="list-inline footer-menu">
-										<li><a href="#">Conditions d'utilisation</a></li>
-										<li><a href="#">Politique de service</a></li>
-										<li><a href="#">Contactez-nous</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</footer>
-
-				<!--Hidden elements - excluded from jPanel Menu on mobile-->
-				<div class="hidden-elements jpanel-menu-exclude"> 
-					<!--@modal - signup modal-->
-					<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-									<h4 class="modal-title">Sign Up</h4>
-								</div>
-								<div class="modal-body">
-									<form action="signup.htm" role="form">
-										<h5>Price Plan</h5>
-										<select class="form-control">
-											<option>Basic</option>
-											<option>Pro</option>
-											<option>Pro +</option>
-										</select>
-										<h5>Account Information</h5>
-										<div class="form-group">
-											<label class="sr-only" for="signup-first-name">First Name</label>
-											<input type="text" class="form-control" id="signup-first-name" placeholder="First name">
-										</div>
-										<div class="form-group">
-											<label class="sr-only" for="signup-last-name">Last Name</label>
-											<input type="text" class="form-control" id="signup-last-name" placeholder="Last name">
-										</div>
-										<div class="form-group">
-											<label class="sr-only" for="signup-username">Userame</label>
-											<input type="text" class="form-control" id="signup-username" placeholder="Username">
-										</div>
-										<div class="form-group">
-											<label class="sr-only" for="signup-email">Email address</label>
-											<input type="email" class="form-control" id="signup-email" placeholder="Email address">
-										</div>
-										<div class="form-group">
-											<label class="sr-only" for="signup-password">Password</label>
-											<input type="password" class="form-control" id="signup-password" placeholder="Password">
-										</div>
-										<div class="checkbox">
-											<label>
-												<input type="checkbox" value="term">
-												I agree with the Terms and Conditions.
-											</label>
-										</div>
-										<button class="btn btn-primary" type="submit">Sign up</button>
-									</form>
-								</div>
-								<div class="modal-footer"> <small>Already signed up? <a href="login.htm">Login here</a>.</small>
-								</div>
-							</div><!-- /.modal-content --> 
-						</div><!-- /.modal-dialog --> 
-					</div><!-- /.modal --> 
-
-					<!--@modal - login modal-->
-					<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-									<h4 class="modal-title">Login</h4>
-								</div>
-								<div class="modal-body">
-									<form action="login.htm" role="form">
-										<div class="form-group">
-											<label class="sr-only" for="login-email">Email</label>
-											<input type="email" id="login-email" class="form-control email" placeholder="Email">
-										</div>
-										<div class="form-group">
-											<label class="sr-only" for="login-password">Password</label>
-											<input type="password" id="login-password" class="form-control password" placeholder="Password">
-										</div>
-										<button type="button" class="btn btn-primary">Login</button>
-									</form>
-								</div>
-								<div class="modal-footer"> <small>Not a member? <a href="#" class="signup">Sign up now!</a></small><br />
-									<small><a href="#">Forgotten password?</a></small>
-								</div>
-							</div><!-- /.modal-content --> 
-						</div><!-- /.modal-dialog --> 
-					</div><!-- /.modal --> 
+	
+	<div id="content">
+		<!--== Start content ==-->
+		<?php echo $content ? $content : "";?>
+		<!--== End content ==-->
+	</div>
+				
+				
+				
+	<div id="content-below" class="wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="upsell"> <small class="muted">99.9% Uptime <span class="spacer">//</span> Free upgrade assistence <span class="spacer">//</span> 24/7 Support <span class="spacer">//</span> Plans from $19.99/month <span class="spacer">//</span> </small> <a href="pricing.htm" class="btn btn-primary">Start your Free Trial Today! <i class="fa fa-arrow-right"></i></a>
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col">
+					<div class="block contact-block"> 
+						<!--@todo: replace with company contact details-->
+						<h3>Nous contactez</h3>
+						<address>
+							<p><abbr title="Email"><i class="fa fa-envelope"></i></abbr> <a mailto:"contact@coachme.fr">contact@coachme.fr</a></p>
+						</address>
+					</div>
+				</div>
+				<div class="col-md-5 col">
+					<div class="block">
+						<h3>A propos</h3>
+							<p>Making the web a prettier place one template at a time! We make beautiful, quality, responsive Drupal & web templates!</p>
+					</div>
+				</div>
+				<div class="col-md-4 col">
+					<div class="block newsletter">
+						<h3>Newsletter</h3>
+						<p>Restez informer de toutes les actualités en vous inscrivant à notre Newsletter.</p>
+						<!--@todo: replace with mailchimp code-->
+						<form role="form">
+							<div class="input-group input-group-sm">
+								<label class="sr-only" for="email-field">Email</label>
+								<input type="text" class="form-control" id="email-field" placeholder="Email">
+								<span class="input-group-btn">
+									<button class="btn btn-primary" type="button">Go!</button>
+								</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div id="toplink"><a href="#top" class="top-link" title="Back to top">Back To Top <i class="fa fa-chevron-up"></i></a>
+				</div>
+				<!--@todo: replace with company copyright details-->
+				<div class="subfooter">
+					<div class="col-md-6">
+						<p>Copyright 2013 &copy; CoachMe</p>
+					</div>
+					<div class="col-md-6">
+						<ul class="list-inline footer-menu">
+							<li><a href="#">Conditions d'utilisation</a></li>
+							<li><a href="#">Politique de service</a></li>
+							<li><a href="#">Contactez-nous</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!--Hidden elements - excluded from jPanel Menu on mobile-->
+	<div class="hidden-elements jpanel-menu-exclude"> 
+		<!--@modal - signup modal-->
+		<div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Sign Up</h4>
+					</div>
+					<div class="modal-body">
+						<form action="signup.htm" role="form">
+							<h5>Price Plan</h5>
+							<select class="form-control">
+								<option>Basic</option>
+								<option>Pro</option>
+								<option>Pro +</option>
+							</select>
+							<h5>Account Information</h5>
+							<div class="form-group">
+								<label class="sr-only" for="signup-first-name">First Name</label>
+								<input type="text" class="form-control" id="signup-first-name" placeholder="First name">
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="signup-last-name">Last Name</label>
+								<input type="text" class="form-control" id="signup-last-name" placeholder="Last name">
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="signup-username">Userame</label>
+								<input type="text" class="form-control" id="signup-username" placeholder="Username">
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="signup-email">Email address</label>
+								<input type="email" class="form-control" id="signup-email" placeholder="Email address">
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="signup-password">Password</label>
+								<input type="password" class="form-control" id="signup-password" placeholder="Password">
+							</div>
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="term">
+									I agree with the Terms and Conditions.
+								</label>
+							</div>
+							<button class="btn btn-primary" type="submit">Sign up</button>
+						</form>
+					</div>
+					<div class="modal-footer"> <small>Already signed up? <a href="login.htm">Login here</a>.</small>
+					</div>
+				</div><!-- /.modal-content --> 
+			</div><!-- /.modal-dialog --> 
+		</div><!-- /.modal --> 
+
+		<!--@modal - login modal-->
+		<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">Login</h4>
+					</div>
+					<div class="modal-body">
+						<form action="login.htm" role="form">
+							<div class="form-group">
+								<label class="sr-only" for="login-email">Email</label>
+								<input type="email" id="login-email" class="form-control email" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="login-password">Password</label>
+								<input type="password" id="login-password" class="form-control password" placeholder="Password">
+							</div>
+							<button type="button" class="btn btn-primary">Login</button>
+						</form>
+					</div>
+					<div class="modal-footer"> <small>Not a member? <a href="#" class="signup">Sign up now!</a></small><br />
+						<small><a href="#">Forgotten password?</a></small>
+					</div>
+				</div><!-- /.modal-content --> 
+			</div><!-- /.modal-dialog --> 
+		</div><!-- /.modal --> 
 	</div>
 		
 	<!--Scripts --> 
