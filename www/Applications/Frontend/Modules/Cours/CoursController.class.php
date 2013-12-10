@@ -4,24 +4,7 @@ namespace Applications\Frontend\Modules\Cours;
 class CoursController extends \Library\BackController {
 	
 	public function executeIndex(\Library\HTTPRequest $request) {
-		$nombreCours = $this->app->config()->get('nombre_cours');
 		
-		// On ajoute une définition pour le titre.
-		$this->page->addVar('title', 'Mika-p - Accueil');
-		$this->page->addVar('class_accueil', 'active');
-		
-		// On récupère le manager des cours.
-		$manager = $this->managers->getManagerOf('Cours');
-		$listeCours = array($manager->getList(0, $nombreCours));
-		
-		// On ajoute le nom de la matière correspondante pour les liens
-		for ($i = 0; $i < count($listeCours); $i++) {
-			$listeCours[$i][] = $this->managers->getManagerOf('Matiere')->getUnique($listeCours[$i][0]->matiere())->libelle();
-			$listeCours[$i][] = $this->managers->getManagerOf('Matiere')->getUnique($listeCours[$i][0]->matiere())->icon();
-		}
-
-		// On ajoute la variable $listeCours à la vue.
-		$this->page->addVar('listeCours', $listeCours);
 	}
 	
 	public function executeList_cours(\Library\HTTPRequest $request)

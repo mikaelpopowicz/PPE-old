@@ -11,13 +11,7 @@ class FrontendApplication extends \Library\Application {
 	
 	public function run() {
 		$controller = $this->getController();
-		$managers = new \Library\Managers('PDO', \Library\PDOFactory::getMysqlConnexion());
-		$manager = $managers->getManagerOf('Matiere');
-		$listMatieres = $manager->getList();
-		$controller->page()->addVar('matieres', $listMatieres);
-		foreach ($listMatieres as $key) {
-			$controller->page()->addVar('class_'.$key['libelle'], "");
-		}
+		//$managers = new \Library\Managers('PDO', \Library\PDOFactory::getMysqlConnexion());
 		$controller->execute();
 		$this->httpResponse->setPage($controller->page());
 		$this->httpResponse->send();

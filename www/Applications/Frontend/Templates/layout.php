@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <!-- Mirrored from themelize.me/demos/appstrap2.0/theme/index.htm by HTTrack Website Copier/3.x [XR&CO'2010], Mon, 30 Sep 2013 11:57:33 GMT -->
 <head>
@@ -83,7 +83,7 @@
 							<div class="col-md-8"> 
 								<!--branding/logo--> 
 								<a class="navbar-brand" href="index.htm" title="Home">
-									<h1><span>Coach</span>Me<span>.</span></h1>
+									<h1><span>Coach</span>Me<span>.fr</span></h1>
 								</a>
 								<div class="slogan">Le coaching à portée de main</div>
 							</div>

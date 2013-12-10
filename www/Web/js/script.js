@@ -169,6 +169,12 @@ $(document).ready(function() {
         slider.find('[data-animate-in]').each(function() {
           $(this).css('visibility','hidden');
         });
+
+        //slide backgrounds
+        slider.find('.slide-bg').each(function() {
+          $(this).css({'background-image': 'url('+ $(this).data('bg-img') +')'});
+          $(this).css('visibility','visible').addClass('animated').addClass($(this).data('animate-in'));
+        });
         
         //animate in first slide
         slider.find('.slide').eq(1).find('[data-animate-in]').each(function() {
@@ -188,12 +194,17 @@ $(document).ready(function() {
         });
       },
       before: function(slider) {
+        slider.find('.slide-bg').each(function() {
+          $(this).removeClass($(this).data('animate-in')).removeClass('animated').css('visibility','hidden');
+        });
+        
         //hide next animate element so it can animate in
         slider.find('.slide').eq(slider.animatingTo + 1).find('[data-animate-in]').each(function() {
           $(this).css('visibility','hidden');
         });
       },
       after: function(slider) {
+       //alert(slider.currentSlide);
         //hide animtaed elements so they can animate in again
         slider.find('.slide').find('[data-animate-in]').each(function() {
           $(this).css('visibility','hidden');
