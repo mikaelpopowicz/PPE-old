@@ -5,7 +5,7 @@ Sources du PPE BTS SIO SLAM 2013
 
 ## What ?
 
-Vous trouverez ici les sources que l'on a utiliser pour travailler ensemble de façon simple pour gérer le versionning.
+Vous trouverez ici les sources que l'on a utilisé pour travailler ensemble de façon simple pour gérer le versionning.
 
 ## Auteurs
 
