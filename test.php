@@ -10,7 +10,7 @@
 	if(!empty($_POST['pseudo']))
 {
 // …
-// Votre code
+// Votre code test 11H25 nyto
 // …
 }
 ?> 
