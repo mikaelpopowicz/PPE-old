@@ -1,6 +1,21 @@
+/**
+*	Suppression des droits, de l'utilisateur et de la base si ils existent
+*/
+REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'coaching'@'localhost';
+DROP USER 'coaching'@'localhost';
 DROP DATABASE IF EXISTS coaching;
 
+/**
+*	Création de l'utilisateur, la base et affection des droits
+*/
+CREATE USER 'coaching'@'localhost' IDENTIFIED BY  'motdepasse';
 CREATE DATABASE IF NOT EXISTS coaching;
+GRANT ALL PRIVILEGES ON  `coaching` . * TO  'coaching'@'localhost';
+
+
+/**
+*	Création des tables
+*/
 USE coaching;
 # -----------------------------------------------------------------------------
 #       TABLE : MEMBRE
