@@ -145,7 +145,7 @@ CREATE TABLE IF NOT EXISTS PROGAMME
 #       TABLE : Abonnement
 # -----------------------------------------------------------------------------
 
-CREATE TABLE IF NOT EXISTS Abonnement
+CREATE TABLE IF NOT EXISTS ABONNEMENT
  (
    id_abonnement INTEGER NOT NULL  ,
    libelle_abonnement VARCHAR(128) NULL  ,
