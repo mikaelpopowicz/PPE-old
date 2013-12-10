@@ -11,19 +11,19 @@
 	<meta name="author" content="CPM-WEB">
 
 	<!-- Bootstrap CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Font Awesome -->
-	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="/css/font-awesome.min.css" rel="stylesheet">
 
 	<!-- Plugins -->
 
-	<link href="plugins/animate/animate.css" rel="stylesheet">
-	<link href="plugins/flexslider/flexslider.css" rel="stylesheet">
-	<link href="plugins/clingify/clingify.css" rel="stylesheet">
+	<link href="/plugins/animate/animate.css" rel="stylesheet">
+	<link href="/plugins/flexslider/flexslider.css" rel="stylesheet">
+	<link href="/plugins/clingify/clingify.css" rel="stylesheet">
 
 	<!-- Theme style -->
-	<link href="css/theme-style.min.css" rel="stylesheet">
+	<link href="/css/theme-style.min.css" rel="stylesheet">
 
 	<!--Your custom colour override-->
 	<link href="#" id="colour-scheme" rel="stylesheet">
@@ -38,10 +38,10 @@
 	<![endif]-->
 
 	<!-- Le fav and touch icons - @todo: fill with your icons or remove -->
-	<link rel="shortcut icon" href="img/icons/favicon.png">
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/114x114.png">
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/72x72.png">
-	<link rel="apple-touch-icon-precomposed" href="img/icons/default.png">
+	<link rel="shortcut icon" href="/img/icons/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/icons/114x114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/icons/72x72.png">
+	<link rel="apple-touch-icon-precomposed" href="/img/icons/default.png">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Rambla|Calligraffitti' rel='stylesheet' type='text/css'>
 
 	<!--Retina.js plugin - @see: http://retinajs.com/-->
@@ -89,7 +89,7 @@
 					<div class="row">
 						<div class="col-md-8"> 
 							<!--branding/logo--> 
-							<a class="navbar-brand" href="index.htm" title="Home">
+							<a class="navbar-brand" href="/" title="Accueil">
 								<h1><span>Coach</span>Me<span>.fr</span></h1>
 							</a>
 							<div class="slogan">Le coaching à porté de main</div>
@@ -120,8 +120,8 @@
         
 					<!--user menu-->
 					<div class="btn-group user-menu pull-right">
-						<a href="#signup-modal" class="btn btn-primary signup" data-toggle="modal">Sign Up</a>
-						<a href="#login-modal" class="btn btn-primary dropdown-toggle login" data-toggle="modal">Login</a>
+						<a href="/inscription/" class="btn btn-primary signup" data-toggle="modal">Créer un compte</a>
+						<a href="/connexion" class="btn btn-primary dropdown-toggle login" data-toggle="modal">Connexion</a>
 					</div>
         
 					<!--everything within this div is collapsed on mobile-->
@@ -129,56 +129,10 @@
           
 		  				<!--main navigation-->
 						<ul class="nav navbar-nav">
-									<li class="home-link"><a href="index.htm"><i class="fa fa-home"></i><span class="hidden">Home</span></a></li>
-									<li class="dropdown"> <a href="features.htm" class="dropdown-toggle menu-item" id="features-drop" data-toggle="dropdown">Features +</a> 
-										<!-- Dropdown Menu - Mega Menu -->
-										<ul class="dropdown-menu mega-menu" role="menu" aria-labelledby="features-drop">
-											<li role="presentation" class="dropdown-header">Mega Menu with links & text items</li>
-											<li role="presentation">
-												<ul class="row list-unstyled" role="menu">
-													<li class="col-md-4" role="presentation"> <a role="menuitem" href="features.htm" class="img-link"><img src="img/features/feature-1.png" alt="Feature 1" /></a> <a role="menuitem" href="features.htm" tabindex="-1" class="menu-item"><strong>Mobile Friendly</strong></a> <span>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio!</span> </li>
-													<li class="col-md-4" role="presentation"> <a role="menuitem" href="features.htm" class="img-link"><img src="img/features/feature-2.png" alt="Feature 2" /></a> <a role="menuitem" href="features.htm" tabindex="-1" class="menu-item"><strong>24/7 Support</strong></a> <span>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio!</span> </li>
-													<li class="col-md-4" role="presentation"> <a role="menuitem" href="features.htm" class="img-link"><img src="img/features/feature-3.png" alt="Feature 2" /></a> <a role="menuitem" href="features.htm" tabindex="-1" class="menu-item"><strong>99% Uptime</strong></a> <span>Rhoncus adipiscing, magna integer cursus augue eros lacus porttitor magna. Dictumst, odio!</span> </li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-									<li><a href="pricing.htm" class="menu-item">Pricing</a></li>
-									<li><a href="customers.htm" class="menu-item">Customers</a></li>
-									<li class="dropdown"> <a href="about.htm" class="dropdown-toggle" id="about-drop" data-toggle="dropdown">About +</a> 
-										<!-- Dropdown Menu -->
-										<ul class="dropdown-menu" role="menu" aria-labelledby="about-drop">
-											<li role="presentation"><a role="menuitem" href="about.htm" tabindex="-1" class="menu-item">About Us</a></li>
-											<li role="presentation"><a role="menuitem" href="team.htm" tabindex="-1" class="menu-item">Our Team</a></li>
-											<li role="presentation"><a role="menuitem" href="contact.htm" tabindex="-1" class="menu-item">Contact</a></li>
-										</ul>
-									</li>
-									<li class="dropdown"> <a href="blog.htm" class="dropdown-toggle" id="blog-drop" data-toggle="dropdown">Blog +</a> 
-										<!-- Dropdown Menu -->
-										<ul class="dropdown-menu" role="menu" aria-labelledby="blog-drop">
-											<li role="presentation"><a role="menuitem" href="blog.htm" tabindex="-1" class="menu-item">Right Sidebar</a></li>
-											<li role="presentation"><a role="menuitem" href="blog-leftbar.htm" tabindex="-1" class="menu-item">Left Sidebar</a></li>
-											<li role="presentation"><a role="menuitem" href="blog-post.htm" tabindex="-1" class="menu-item">Blog Post</a></li>
-										</ul>
-									</li>
-									<li class="dropdown"> <a href="pages.htm" class="dropdown-toggle" id="pages-drop" data-toggle="dropdown">More +</a> 
-										<!-- Mega Menu -->
-										<ul class="dropdown-menu" role="menu" aria-labelledby="pages-drop">
-											<li role="presentation" class="dropdown-header">Pages</li>
-											<li role="presentation"><a role="menuitem" href="login.htm" tabindex="-1" class="menu-item">Login</a></li>
-											<li role="presentation"><a role="menuitem" href="signup.htm" tabindex="-1" class="menu-item">Sign Up</a></li>
-											<li role="presentation"><a role="menuitem" href="starter.htm" tabindex="-1" class="menu-item">Starter Snippets</a></li>
-											<li role="presentation"><a role="menuitem" href="index-static.htm" tabindex="-1" class="menu-item">Homepage Static Banner</a></li>
-											<li role="presentation"><a role="menuitem" href="elements.htm" tabindex="-1" class="menu-item">Theme Elements</a></li>
-											<li role="presentation" class="dropdown-header">Other Goodies</li>
-											<li role="presentation"><a role="menuitem" href="colours.htm" tabindex="-1" class="menu-item">Theme Colours</a></li>
-											<li role="presentation"><a role="menuitem" href="bs-mobile-menu.htm" tabindex="-1" class="menu-item">Bootstrap Mobile Menu</a></li>
-											<li role="presentation"><a role="menuitem" href="navbar-full.htm" tabindex="-1" class="menu-item">Navbar Full Width</a></li>
-											<li role="presentation"><a role="menuitem" href="flexslider-full.htm" tabindex="-1" class="menu-item">Slider Full Width</a></li>
-											<li role="presentation"><a role="menuitem" href="flexslider-behind.htm" tabindex="-1" class="menu-item">Slider Behind</a></li>
-											<li role="presentation"><a role="menuitem" href="flexslider-boxed.htm" tabindex="-1" class="menu-item">Slider Boxed</a></li>
-										</ul>
-									</li>
+									<li class="home-link"><a href="/"><i class="fa fa-home"></i><span class="hidden">Accueil</span></a></li>
+									<li><a href="/trouver-un-coach" class="menu-item">Trouver un coach</a></li>
+									<li><a href="/actualites" class="menu-item">Actualités</a></li>
+									<li><a href="/contact" class="menu-item">Contact</a></li>
 									<li><a href="/a-propos" class="menu-item">A propos</a></li>
 								</ul>
 					</div><!--/.navbar-collapse --> 
@@ -205,24 +159,22 @@
 							<div class="col-md-3 col">
 								<div class="block contact-block"> 
 									<!--@todo: replace with company contact details-->
-									<h3>Contact Us</h3>
+									<h3>Nous contactez</h3>
 									<address>
-										<p><abbr title="Phone"><i class="fa fa-phone"></i></abbr> 019223 8092344</p>
-										<p><abbr title="Email"><i class="fa fa-envelope"></i></abbr> info@appstrap.me</p>
-										<p><abbr title="Address"><i class="fa fa-home"></i></abbr> Sunshine House, Sunville. SUN12 8LU.</p>
+										<p><abbr title="Email"><i class="fa fa-envelope"></i></abbr> <a mailto:"contact@coachme.fr">contact@coachme.fr</a></p>
 									</address>
 								</div>
 							</div>
 							<div class="col-md-5 col">
 								<div class="block">
-									<h3>About Us</h3>
+									<h3>A propos</h3>
 										<p>Making the web a prettier place one template at a time! We make beautiful, quality, responsive Drupal & web templates!</p>
 								</div>
 							</div>
 							<div class="col-md-4 col">
 								<div class="block newsletter">
 									<h3>Newsletter</h3>
-									<p>Stay up to date with our latest news and product releases by signing up to our newsletter.</p>
+									<p>Restez informer de toutes les actualités en vous inscrivant à notre Newsletter.</p>
 									<!--@todo: replace with mailchimp code-->
 									<form role="form">
 										<div class="input-group input-group-sm">
@@ -242,13 +194,13 @@
 							<!--@todo: replace with company copyright details-->
 							<div class="subfooter">
 								<div class="col-md-6">
-									<p>Site template by <a href="#">AppStrap</a> | Copyright 2012 &copy; AppStrap</p>
+									<p>Copyright 2013 &copy; CoachMe</p>
 								</div>
 								<div class="col-md-6">
 									<ul class="list-inline footer-menu">
-										<li><a href="#">Terms</a></li>
-										<li><a href="#">Privacy</a></li>
-										<li><a href="#">Contact Us</a></li>
+										<li><a href="#">Conditions d'utilisation</a></li>
+										<li><a href="#">Politique de service</a></li>
+										<li><a href="#">Contactez-nous</a></li>
 									</ul>
 								</div>
 							</div>
@@ -343,20 +295,20 @@
 	</div>
 		
 	<!--Scripts --> 
-	<script src="js/jquery.min.js"></script> 
-	<script src="js/jquery-migrate-1.2.1.min.js"></script> <!--Legacy jQuery support for quicksand plugin--> 
+	<script src="/js/jquery.min.js"></script> 
+	<script src="/js/jquery-migrate-1.2.1.min.js"></script> <!--Legacy jQuery support for quicksand plugin--> 
 
 	<!-- Bootstrap JS --> 
-	<script src="js/bootstrap.min.js"></script> 
+	<script src="/js/bootstrap.min.js"></script> 
 
 	<!--JS plugins--> 
-	<script src="plugins/flexslider/jquery.flexslider-min.js"></script> 
-	<script src="plugins/clingify/jquery.clingify.min.js"></script> 
-	<script src="plugins/jPanelMenu/jquery.jpanelmenu.min.js"></script> 
-	<script src="plugins/jRespond/js/jRespond.js"></script> 
-	<script src="plugins/quicksand/jquery.quicksand.js"></script> 
+	<script src="/plugins/flexslider/jquery.flexslider-min.js"></script> 
+	<script src="/plugins/clingify/jquery.clingify.min.js"></script> 
+	<script src="/plugins/jPanelMenu/jquery.jpanelmenu.min.js"></script> 
+	<script src="/plugins/jRespond/js/jRespond.js"></script> 
+	<script src="/plugins/quicksand/jquery.quicksand.js"></script> 
 
 	<!--Custom scripts mainly used to trigger libraries --> 
-	<script src="js/script.min.js"></script>
+	<script src="/js/script.min.js"></script>
 </body>
 </html>
