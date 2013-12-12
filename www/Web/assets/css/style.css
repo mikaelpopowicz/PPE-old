@@ -93,6 +93,7 @@ body {
 
 /* ---------------------main-content---------------------*/
 .main-content {
+	min-height: 100%;
     margin-bottom: 2%;
     clear: both;
     position: relative;

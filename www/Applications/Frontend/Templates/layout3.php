@@ -308,7 +308,8 @@
 			?>
 			<!--== FIN DU CONTENU DE LA PAGE ==-->
 		</div><!--close .main-content-->		
-		 
+		
+		<br><br><br>
 		<!--begin footer -->
 		<footer class="footer clearfix">
 			<div class="container">
