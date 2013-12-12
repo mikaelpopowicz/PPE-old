@@ -4,7 +4,11 @@
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en" dir="ltr"> <![endif]-->
 <!--[if gt IE 8]><!--><html class="no-js" dir="ltr" lang="en"><!--<![endif]-->
 <head>
-		<title>CoachMe.fr</title>
+		<title>
+			<?php
+			echo isset($title) ? $title : "Titre";
+			?>
+		</title>
 		
 		<!-- Meta Data ================ -->
 		<meta charset="UTF-8"/>
@@ -22,10 +26,7 @@
 		<link href="/assets/css/theme.reset.min.css" rel="stylesheet" type="text/css"/>
 		<link href="/assets/css/style.css" rel="stylesheet" type="text/css"/>
 		
-		
-		
-		<link rel="stylesheet" type="text/css" media="print" href="/assets/css/print.css" />
-		
+		<link rel="stylesheet" type="text/css" media="print" href="/assets/css/print.css" />		
 
 		<!-- Icons ================ put your icons and favicons below -->
 		<!--http://mathiasbynens.be/notes/touch-icons-->
@@ -47,19 +48,25 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="/assets/js/jquery-1.9.1.min.js"><\/script>')</script>
 
+		<?php
+		if($_SERVER['REQUEST_URI'] == "/") {
+		?>
 		<!--animated slider AND loading note two different scripts one for shitty browsers and one for modern --> 
 <!--[if gt IE 8]><!-->
 <script src='/assets/js/sequence-greater-than-ie-8.jquery-min.js'></script>
 <!--<![endif]-->
 <!--[if lte IE 8]><script src='/assets/js/sequence-less-than-ie-8.jquery-min.js'></script><!--<![endif]-->
-		
+		<?php
+		}
+		?>
+
 		<!-- Add to HEAD after style sheet http://modernizr.com/docs/#installing  ================ -->
 		<script src="/assets/js/modernizr.custom.js?v=2.6.2"></script>
 
 		
 </head>
 <body>
- 
+	
 <!--[if lt IE 7]>
 <p class="chromeframe">Your browser is over 12 years old. You are using an <strong>outdated</strong> browser. Please <a href="http://www.google.com/chrome/intl/en/landing_chrome.html">upgrade your browser</a>.</p>
 <![endif]--> 
@@ -295,159 +302,11 @@
 	<!-- begin #page - the container for everything but header -->
 	<div id="page" class="clearfix">
 		<div class="main-content">
-			<div class="container">	
-				<h3 class="short_headline"><span>Easy Equal Heights</span></h3>
-				<div class="row-fluid equal featured-columns"> <!-- add class equal to the surrounding row-fluid class you can stick anything you want in here, this is an example with some custom css-->
-					<div class="span4">
-						<a href="#" class="innershadow"><img class="banner-img" src="demo/eqh/1.jpg" alt=""></a> <!-- the class innershadow can be any wrapping tag (div,span), if you want a link on the image, then use an a tag-->
-						<div class="content">
-							<h3 class="primary-color">Copy fitting is a pain</h3>
-							<p>Copy fitting is a pain. Now you dont' have to be perfect and all the heights are equal. If all of this may seem wonderful to you, that's because it is! Our functionality is unparalleled in the industry.</p>
-							<p class="text-right last"><a href="#" class="btn custom-btn btn-small btn-very-subtle">More &rarr;</a></p>
-						</div>
-					</div>
-					<div class="span4">
-						<a href="#" class="innershadow"><img class="banner-img" src="demo/eqh/2.jpg" alt=""></a>
-						<div class="content">
-							<h3 class="primary-color">Super Simple Lean Mark Up</h3>
-							<p>We have proven we know that it is better to disintermediate intuitively than to expedite virally. The dot-com, mission-critical structuring factor can be summed up in one word: compelling.</p>
-							<p class="text-right last"><a href="#" class="btn custom-btn btn-small btn-very-subtle">More &rarr;</a></p>
-						</div>
-					</div>
-					<div class="span4">
-						<a href="#" class="innershadow"><img class="banner-img" src="demo/eqh/3.jpg" alt=""></a>
-						<div class="content">
-							<h3 class="primary-color">Responsive Equal Heights</h3>
-							<p>The accounting factor is short-term. Our functionality is unmatched, but our transparent models and user-proof configuration is constantly considered a remarkable achievement.</p>
-							<p class="text-right last"><a href="#" class="btn custom-btn btn-small btn-very-subtle">More &rarr;</a></p>
-						</div>
-					</div>
-				</div>
-				<!--close row-fluid -->
-			</div><!--close .container-->
-			<!--this is not inside a .container div because it's not very long. You'll need to adjust the html and the css if you use this differently-->
-			<section class="call-to-action">
-				<h2>So what are you waiting for? This is it.</h2> <a class="btn custom-btn btn-large btn-primary" href="pricing-tables.html">Order today! <i class=" e-icon-forward"></i></a>
-			</section><!--close .call-to-action-->
-			<section class="strip">
-				<div class="container">
-					<h3 class="short_headline"><span>Portfolio</span></h3>
-					<div class="row-fluid">
-						<div class="span4">
-							<p>Images in public domain. We will increase our aptitude to evolve without decrementing our capacity to leverage. It may seem marvelous, but it&#039;s true!</p>
-							<p> We apply the proverb "Look before you leap" not only to our structuring but our power to mesh. We practically invented the term "e-businesses". We invariably revolutionize robust obfuscation. That is a remarkable achievement considering the current and previous fiscal year's financial state of things! Is it more important for something to be virally-distributed or to be user-defined? The R&amp;D factor is real-time. The CAD factor is 24/7, best-of-breed. Your budget for empowering should be at least one-tenth of your budget for reintermediating. </p>
-						</div>
-						<!--close span6--> 
-						<!-- thumbnail layout-->
-						<div class="span8">
-							<div class="thumb-gallery three-columns">
-								<ul class="icon-hover">
-									<li><span class="innershadow"><img src="demo/fresh-work/1.jpg" alt="" /></span><!--this an example of using the innershadow on this gallery, I don't apply it site wide -->
-										<div>
-											<span><a href="portfolio-single.html"><i class="e-icon-link"></i></a>
-												<a class="fancyme" data-fancybox-group="gallery" href="demo/portfolio/larger-image-fpo.png"><i class=" e-icon-popup"></i></a></span>
-										</div>
-									</li>
-									<li><span class="innershadow"><img src="demo/fresh-work/2.jpg" alt="" /></span>
-										<div>
-											<span><a href="portfolio-single.html"><i class="e-icon-link"></i></a>
-												<a class="fancyme" data-fancybox-group="gallery" href="demo/portfolio/larger-image-fpo.png"><i class=" e-icon-popup"></i></a></span>
-										</div>
-									</li>
-									<li><span class="innershadow"><img src="demo/fresh-work/9.jpg" alt="" /></span>
-										<div>
-											<span><a href="portfolio-single.html"><i class="e-icon-link"></i></a>
-												<a class="fancyme" data-fancybox-group="gallery" href="demo/portfolio/larger-image-fpo.png"><i class=" e-icon-popup"></i></a></span>
-										</div>
-									</li>
-									<li><span class="innershadow"><img src="demo/fresh-work/4.jpg" alt="" /></span>
-										<div>
-											<span><a href="portfolio-single.html"><i class="e-icon-link"></i></a>
-											<a class="fancyme" data-fancybox-group="gallery" href="demo/portfolio/larger-image-fpo.png"><i class=" e-icon-popup"></i></a></span>
-										</div>
-									</li>
-									<li><span class="innershadow"><img src="demo/fresh-work/5.jpg" alt="" /></span>
-										<div>
-											<span><a href="portfolio-single.html"><i class="e-icon-link"></i></a>
-												<a class="fancyme" data-fancybox-group="gallery" href="demo/portfolio/larger-image-fpo.png"><i class=" e-icon-popup"></i></a></span>
-											</div>
-									</li>
-									<li><span class="innershadow"><img src="demo/fresh-work/7.jpg" alt="" /></span>
-										<div>
-											<span><a href="portfolio-single.html"><i class="e-icon-link"></i></a>
-												<a class="fancyme" data-fancybox-group="gallery" href="demo/portfolio/larger-image-fpo.png"><i class=" e-icon-popup"></i></a></span>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!--close .thumb-gallery-->
-						</div>
-						<!--close span6-->
-					</div>
-					<!--close row-fluid-->
-		
-				</div><!--close .container-->
-			</section><!--close .strip-->
-
-
-			<div class="container">
-				<div class="row-fluid">
-					<div class="span4">
-						<div class="well">
-							<h4 class="primary-color">Amplify our power to benchmark</h4>
-							<p> <img class="alignleft" src="demo/well-fpo.png" alt="" /> Without reporting, you will lack eyeballs. We will amplify our power to benchmark without decreasing our capacity to mesh. We will reinvent the buzzword "frictionless". </p>
-							<p class="text-right"><a href="#" class="btn custom-btn btn-primary">Linktoit</a></p>
-						</div>
-						<!--close .well -->
-					</div>
-					<!--close span4-->
-				
-					<div class="rotating-testimonials span8">
-						<!--"rotating-testimonials" is a required class-->
-						<h3 class="short_headline"><span>Testimonials</span></h3>
-						<div class="panels">
-							<div id="t1">
-								<blockquote>
-									<p>One isn’t necessarily born with courage, but one is born with potential. Without courage, we cannot practice any other virtue with consistency. We can’t be kind, true, merciful, generous, or honest.</p>
-									<footer>Maya Angelou</footer>
-								</blockquote>
-							</div>
-							<!--close #t1 -->
-							<div id="t2">
-								<blockquote>
-									<p>When the highest type of people hear Tao (Truth), they diligently practice it. When the average type of people hear Tao, they half believe in it. When the lowest type of people hear Tao, they laugh at it. If they did not laugh, it would not be Tao.</p>
-									<footer>Lao-Tzu</footer>
-								</blockquote>
-							</div>
-							<!--close #t2 -->
-							<div id="t3">
-								<blockquote>
-									<p>The human being is part of the whole, called by us the ‘universe’, a part limited in time and space. He experiences himself, his thoughts and feelings, as something separate from the rest — a kind of optical delusion of consciousness. This delusion is a kind of prison for us, restricting us to our personal desires. Our task must be to free ourselves from this prison by widening our circle of compassion to embrace all living creatures and the whole of nature in its beauty.</p>
-									<footer>Albert Einstein</footer>
-								</blockquote>
-							</div>
-							<!--close #t3 -->
-							<div id="t4">
-								<blockquote>
-									<p>Whatever course you decide upon, there is always someone to tell you that you are wrong. There are always difficulties arising which tempt you to believe that your critics are right. To map out a course of action and follow it to an end requires courage.</p>
-									<footer>Ralph Waldo Emerson</footer>
-								</blockquote>
-							</div>
-							<!--close #t4 -->
-						</div>
-						<!--close panels-->
-						<ul class="tabs">
-							<li class="tab"><a href="#t1">maya-angelou</a></li>
-							<li class="tab"><a href="#t2">lao-tzu</a></li>
-							<li class="tab"><a href="#t3">albert-einstein</a></li>
-							<li class="tab"><a href="#t4">ralph-waldo-emerson</a></li>
-						</ul>
-						<p class="text-right"><a href="testimonials.html" class="btn custom-btn btn-small btn-very-subtle">All Testimonials</a></p>
-					</div>
-					<!-- end rotating-testimonials span8-->
-				</div>
-				<!-- end row-fluid-->
-			</div><!--close .container-->
+			<!--== CONTENU DE LA PAGE ==-->
+			<?php
+			echo isset($content) ? $content : "";
+			?>
+			<!--== FIN DU CONTENU DE LA PAGE ==-->
 		</div><!--close .main-content-->		
 		 
 		<!--begin footer -->
@@ -457,24 +316,18 @@
 				<div class="row-fluid">
 					<div class="span3">
 						<section>
-							<h4>Contact Us</h4>
-							<p>Corporate-Elegance Creative<br>
-							1255 Nowhere Street<br>
-							Tampa, FL 33655<br>
-							<strong>phone:</strong> <a href="tel:8135551234" class="tele">813.555.1234</a><br>
-							<strong>fax:</strong> 813.555.1235<br>
-							<span class="overflow"><strong>email:</strong> <a href="mailto:email@domain.com">email@companydomain.com</a></span> </p>
+							<h4>Nous contacter</h4>
+							<p>CoachMe<br>
+							Paris<br>
+							<span class="overflow"><strong>email:</strong> <a href="mailto:contact@coachme.fr">contact@coachme.fr</a></span> </p>
 						</section>
 						<!--close section-->
 						<section>
-							<h4>Follow Us</h4>
+							<h4>Suivez-nous</h4>
 							<ul class="social">
 								<li><a class="fc-webicon rss round" href="#" title="RSS"></a></li>
 								<li><a class="fc-webicon facebook round" href="#" title="Facebook"></a></li>
 								<li><a class="fc-webicon twitter round" href="#" title="Twitter"></a></li>
-								<li><a class="fc-webicon skype round" href="#" title="Skype"></a></li>
-								<li><a class="fc-webicon dribbble round" href="#" title="dribble"></a></li>
-								<li><a class="fc-webicon linkedin round" href="#" title="Skype"></a></li>
 							</ul>
 						</section>
 						<!--close section-->
@@ -483,12 +336,12 @@
 					<!--section containing newsletter signup and recent images-->
 					<div class="span5">
 						<section>
-							<h4>Stay Updated</h4>
-							<p>Sign up for our newsletter. We won't share your email address.</p>
+							<h4>Restez informé</h4>
+							<p>Incscrivez-vous à notre newsletter. Nous ne divulguons pas les adresses email.</p>
 							<form action="yourscript.php" method="post">
 								<div class="input-append append-fix custom-append row-fluid">
-									<input type="email" class="span8" placeholder="Email Address" name="email" />
-									<button class="btn btn-primary">Sign Up</button>
+									<input type="email" class="span8" placeholder="Adresse email" name="email" />
+									<button class="btn btn-primary">S'inscrire</button>
 								</div>
 								<!--close input-append--> 
 							</form>
@@ -505,10 +358,6 @@
 									<li><a href="#"><img src="demo/image-widget/6.png" alt="" /></a></li>
 									<li><a href="#"><img src="demo/image-widget/7.png" alt="" /></a></li>
 									<li><a href="#"><img src="demo/image-widget/8.png" alt="" /></a></li>
-									<li><a href="#"><img src="demo/image-widget/9.png" alt="" /></a></li>
-									<li><a href="#"><img src="demo/image-widget/10.png" alt="" /></a></li>
-									<li><a href="#"><img src="demo/image-widget/11.png" alt="" /></a></li>
-									<li><a href="#"><img src="demo/image-widget/12.png" alt="" /></a></li>
 								</ul>
 						</section>
 						<!--close section-->
@@ -517,7 +366,7 @@
 					<!--section containing blog posts-->
 					<div class="span4">
 						<section>
-							<h4>About Us</h4>
+							<h4>A propos</h4>
 							<p>Immortal robot bodies are the new rage. Religion can’t provide immortal robot bodies. Flying heads in bubbles are also popular. The cost of preserving a head is much less than the entire body and at least you can keep your face. But with the immortal robot, after you die, your soul or spirit is digitized and your flesh body rots, but you don’t care, ‘cause having an immortal robot body is ultra cool and sexy. While you’re still on earth, your immortal robot body sits in storage ready for the fateful day. You betcha, it does provide peace of mind or piece of mind. <span class="small">© Christina Arasmo Beymer (me).</span></p>
 						</section>
 					</div>
@@ -562,6 +411,7 @@
 	<script src='/assets/js/lemmon-slider.min.js'></script><!-- variable width image slider AND loading --> 
 
 	<!--initialize scripts / custom scripts--> 
-	<script src='/assets/js/custom.js'></script> 	
+	<script src='/assets/js/custom.js'>
+	</script> 	
 </body>
 </html>
