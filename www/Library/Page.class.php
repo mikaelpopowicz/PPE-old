@@ -40,7 +40,7 @@ class Page extends ApplicationComponent
 		$content = ob_get_clean();
      
 		ob_start();
-		require __DIR__.'/../Applications/'.$this->app->name().'/Templates/layout2.php';
+		require __DIR__.'/../Applications/'.$this->app->name().'/Templates/layout3.php';
 		return ob_get_clean();
 	}
    
