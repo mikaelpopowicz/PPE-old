@@ -15,13 +15,12 @@ abstract class BackController extends ApplicationComponent
      	
 		$this->managers = new Managers('PDO', PDOFactory::getMysqlConnexion());
 		$this->page = new Page($app);
-		$this->page->addVar("class_accueil", "");
-		$this->page->addVar("class_cours", "");
-		$this->page->addVar("class_travaux", "");
-		$this->page->addVar("class_tutos", "");
+		$this->page->addVar("class_home", "");
+		$this->page->addVar("class_network", "");
+		$this->page->addVar("class_find", "");
+		$this->page->addVar("class_join", "");
+		$this->page->addVar("class_about", "");
 		$this->page->addVar("class_contact", "");
-		$this->page->addVar("class_slam", "");
-		$this->page->addVar("class_sisr", "");
      
 		$this->setModule($module);
 		$this->setAction($action);

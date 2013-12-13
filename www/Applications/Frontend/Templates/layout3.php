@@ -53,7 +53,9 @@
 		?>
 		<!--animated slider AND loading note two different scripts one for shitty browsers and one for modern --> 
 <!--[if gt IE 8]><!-->
+		<!-- == A ENLEVER UNE FOIS LE SLIDER MIS EN PLACE !!! CAUSE DES PROBLEME POUR LA VERSION MOBILE
 <script src='/assets/js/sequence-greater-than-ie-8.jquery-min.js'></script>
+			-->
 <!--<![endif]-->
 <!--[if lte IE 8]><script src='/assets/js/sequence-less-than-ie-8.jquery-min.js'></script><!--<![endif]-->
 		<?php
@@ -96,13 +98,13 @@
 					<div class="navbar-inner">
 						<div class="nav-collapse collapse">
 							<ul class="nav accordmobile pull-right"><!--accordmobile comes in when the browser is at 979px and below, it fixes bugs with bootstrap's toggles of multiple level dropdowns which they are dropping support for and they had lousy support in 2x-->
-								<li><a href="register.html">Créer un compte <i class="e-icon-pencil"></i></a></li>
+								<li><a href="/inscription/membre">Devenir membre <i class="e-icon-pencil"></i></a></li>
 										
 								<!--begin .dropdown .parent -->
 								<li class="dropdown parent"> <a class="dropdown-toggle" href="#" data-toggle="dropdown">Connexion <i class="e-icon-login"></i></a>
 									<ul class="dropdown-menu signin"><!--begin .dropdown-menu .signin -->			
 										<li><!--begin list item / everything goes inside the list item-->
-											<form><!--begin form add your stuff -->
+											<form action="/connexion/login" method="post"><!--begin form add your stuff -->
 												<input type="text" placeholder="Email">
 												<input type="password" placeholder="Mot de passe">
 												<label class="checkbox">
@@ -183,7 +185,7 @@
 										<div id="search-trigger">
 											<i class="e-icon-search"></i>
 										</div>
-										<input placeholder="search + enter" type="text">
+										<input placeholder="Rechercher" type="text">
 									</form>
 								</li>
 							</ul><!-- close nav accordmobile-->
@@ -201,11 +203,12 @@
 					<div class="navbar-inner">
 						<div class="nav-collapse collapse">
 							<ul class="nav accordmobile">
-								<li class="active"><a href="/">Accueil</a></li>
-								<li><a href="/">Trouver un coach</a></li>
-								<li><a href="/">Nous rejoindre</a></li>
-								<li><a href="/">A propos</a></li>
-								<li><a href="/">Contact</a></li>
+								<li class="<?php echo $class_accueil;?>"><a href="/">Accueil</a></li>
+								<li class="<?php echo $class_network;?>"><a href="/network">Network</a></li>
+								<li class="<?php echo $class_find;?>"><a href="/coach">Trouver un coach</a></li>
+								<li class="<?php echo $class_join;?>"><a href="/nous-rejoindre">Nous rejoindre</a></li>
+								<li class="<?php echo $class_about;?>"><a href="/a-propos">A propos</a></li>
+								<li class="<?php echo $class_contact;?>"><a href="/contact">Contact</a></li>
 								<!-- Template Stuff menu
 								<li class="dropdown parent">
 									<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Features <i class="e-icon-down-open-mini"></i></a>
@@ -284,11 +287,12 @@
 				</div>
 				<!-- /.navbar --> 
 
-				<div id="logo">
-					<a href="/"></a>
+				<div id="logo" class="text-logo">
+					<h2><a href="/"><span>Coach</span>Me<span>.Fr</span></a></h2>
+					<!--
 					<object class="logo-svg" data="/assets/images/logo.svg" type="image/svg+xml">
 					</object>
-					<img src="/assets/images/logo.png" alt="Corporate-Elegance Responsive Retina Ready Portfolio Business"/><!--.no-svg fallback-->
+					<img src="/assets/images/logo.png" alt="Corporate-Elegance Responsive Retina Ready Portfolio Business"/><.no-svg fallback-->
 				</div> 
 				<!-- end #logo --> 
 				<!-- ******* print stuff --><div class="print">Phone, name of company etc., for printing</div>
@@ -351,14 +355,14 @@
 						<section>
 							<h4>Recent Images</h4>
 								<ul class="image-widget clearfix">
-									<li><a href="#"><img src="demo/image-widget/1.png" alt="" /></a></li>
-									<li><a href="#"><img src="demo/image-widget/2.png" alt="" /></a></li>
-									<li><a href="#"><img src="demo/image-widget/3.png" alt="" /></a></li>
-									<li><a href="#"><img src="demo/image-widget/4.png" alt="" /></a></li>
-									<li><a href="#"><img src="demo/image-widget/5.png" alt="" /></a></li>
-									<li><a href="#"><img src="demo/image-widget/6.png" alt="" /></a></li>
-									<li><a href="#"><img src="demo/image-widget/7.png" alt="" /></a></li>
-									<li><a href="#"><img src="demo/image-widget/8.png" alt="" /></a></li>
+									<li><a href="#"><img src="/demo/image-widget/1.png" alt="" /></a></li>
+									<li><a href="#"><img src="/demo/image-widget/2.png" alt="" /></a></li>
+									<li><a href="#"><img src="/demo/image-widget/3.png" alt="" /></a></li>
+									<li><a href="#"><img src="/demo/image-widget/4.png" alt="" /></a></li>
+									<li><a href="#"><img src="/demo/image-widget/5.png" alt="" /></a></li>
+									<li><a href="#"><img src="/demo/image-widget/6.png" alt="" /></a></li>
+									<li><a href="#"><img src="/demo/image-widget/7.png" alt="" /></a></li>
+									<li><a href="#"><img src="/demo/image-widget/8.png" alt="" /></a></li>
 								</ul>
 						</section>
 						<!--close section-->

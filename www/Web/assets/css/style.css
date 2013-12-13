@@ -194,6 +194,9 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
 #logo.text-logo {
     margin: 0
 }
+#logo.text-logo h2 span {
+	color:#57a;
+}
 #logo.text-logo h2 a {
     text-decoration: none
 }
@@ -2226,3 +2229,37 @@ only screen and (min-device-pixel-ratio: 1.5){
 
 }
 
+/* ----------------------- 404 page ---------------------------*/
+
+#not-found {
+    margin: 60px 0 45px;
+}
+
+#not-found h2 {
+	color:#727272;
+    font-size: 210px;
+    font-weight: 500;
+    letter-spacing: -10px;
+    line-height: 210px;
+    text-align: center;
+}
+
+#not-found p {
+    color: #727272;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+}
+
+#not-found i {
+    color: #F03;
+    font-size: 160px;
+    position: relative;
+    top: -12px;
+}
+
+.back-home p {
+	color:#727272;
+	text-align:center !important;
+	margin: 0 auto;
+}

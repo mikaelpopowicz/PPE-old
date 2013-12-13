@@ -2,5 +2,9 @@
 <routes>
 	<route url="/" module="Accueil" action="index" />
 	<route url="/connexion(\/?)" module="Connexion" action="index" />
+	<route url="/connexion/login" module="Connexion" action="connexion" />
+	<route url="/connexion/logout" module="Connexion" action="deconnexion" />
 	<route url="/inscription(\/?)" module="Inscription" action="index" />
+	<route url="/inscription/membre" module="Inscription" action="membre" />
+	<route url="/inscription/coach" module="Inscription" action="coach" />
 </routes>
